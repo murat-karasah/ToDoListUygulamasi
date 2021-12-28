@@ -49,6 +49,12 @@ namespace ToDoListUygulaması
                             ((Button)item).Enabled = true;
                         }
                     }
+                    MessageBox.Show("Merhaba " +kontrolkullanici.kullaniciAdi,"Bilgilendirme",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen giriş bilgilerinizi hatalı giriniz", "Hatalı", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }

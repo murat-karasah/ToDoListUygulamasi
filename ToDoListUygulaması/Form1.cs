@@ -47,5 +47,10 @@ namespace ToDoListUygulaması
         {
             label_zaman.Text = DateTime.Now.ToString("dd.MM.yyyyy HH:mm");
         }
+
+        private void btn_kapat_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
