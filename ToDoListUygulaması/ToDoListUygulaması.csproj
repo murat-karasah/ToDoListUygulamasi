@@ -65,6 +65,12 @@
     <Compile Include="Sistemgiris.Designer.cs">
       <DependentUpon>Sistemgiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="YeniKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniKayit.Designer.cs">
+      <DependentUpon>YeniKayit.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +85,9 @@
     </Compile>
     <EmbeddedResource Include="Sistemgiris.resx">
       <DependentUpon>Sistemgiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniKayit.resx">
+      <DependentUpon>YeniKayit.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
