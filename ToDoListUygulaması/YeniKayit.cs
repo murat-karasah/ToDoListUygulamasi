@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ToDoListUygulaması.bussinesServices;
+using ToDoListUygulaması.entities;
 
 namespace ToDoListUygulaması
 {
@@ -65,7 +66,6 @@ namespace ToDoListUygulaması
                 }
                 else
                 {
-
                     Form Kayitliste = Application.OpenForms["Kayitliste"];
                     if (Kayitliste==null)
                     {
@@ -76,12 +76,16 @@ namespace ToDoListUygulaması
                     }
                     else
                     {
-                        //////
+                        GroupBox liste = (GroupBox)Kayitliste.Controls["groupBoxListe"];
+                        DataGridView grdliste = (DataGridView)liste.Controls["dataGridView1"];
+                        List<todo> GuncelListe = todoservices.kayitliste();
+                        grdliste.DataSource = null;
+                        grdliste.DataSource = GuncelListe;
+                        grdliste.Columns["id"].Visible = false;
+
+                        this.Close();
                     }
-
-
                 }
-
             }
             else
             {
