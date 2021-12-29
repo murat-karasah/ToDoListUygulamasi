@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ToDoListUygulaması.bussinesServices;
 
 namespace ToDoListUygulaması
 {
@@ -67,6 +68,24 @@ namespace ToDoListUygulaması
                 T.Show();
             }
            
+        }
+
+        private void btn_kayit_liste_Click(object sender, EventArgs e)
+        {
+            
+            Todoservices todoservices = new Todoservices();
+            if (todoservices.kayitliste().Count!=0)
+            {
+                Kayitliste kayitliste = new Kayitliste();
+                kayitliste.MdiParent = this;
+                kayitliste.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Gösterilecek bir kaydınız yok!", "Uyarı!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
         }
     }
 }

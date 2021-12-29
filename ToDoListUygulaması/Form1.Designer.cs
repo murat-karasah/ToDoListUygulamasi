@@ -86,6 +86,7 @@ namespace ToDoListUygulaması
             this.btn_kayit_liste.TabIndex = 0;
             this.btn_kayit_liste.Text = "Kayıt Liste";
             this.btn_kayit_liste.UseVisualStyleBackColor = true;
+            this.btn_kayit_liste.Click += new System.EventHandler(this.btn_kayit_liste_Click);
             // 
             // btn_yeni_kayit
             // 

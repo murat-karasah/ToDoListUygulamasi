@@ -84,6 +84,7 @@ namespace ToDoListUygulaması
             this.btn_tum_liste.TabIndex = 0;
             this.btn_tum_liste.Text = "Tüm Liste";
             this.btn_tum_liste.UseVisualStyleBackColor = true;
+            this.btn_tum_liste.Click += new System.EventHandler(this.btn_tum_liste_Click);
             // 
             // btn_tamamlandi
             // 
@@ -93,6 +94,7 @@ namespace ToDoListUygulaması
             this.btn_tamamlandi.TabIndex = 0;
             this.btn_tamamlandi.Text = "Tamamlandı";
             this.btn_tamamlandi.UseVisualStyleBackColor = true;
+            this.btn_tamamlandi.Click += new System.EventHandler(this.btn_tamamlandi_Click);
             // 
             // btn_tamamlanamadi
             // 
@@ -102,6 +104,7 @@ namespace ToDoListUygulaması
             this.btn_tamamlanamadi.TabIndex = 0;
             this.btn_tamamlanamadi.Text = "Tamamlanamadı";
             this.btn_tamamlanamadi.UseVisualStyleBackColor = true;
+            this.btn_tamamlanamadi.Click += new System.EventHandler(this.btn_tamamlanamadi_Click);
             // 
             // btn_iptal
             // 
@@ -111,6 +114,7 @@ namespace ToDoListUygulaması
             this.btn_iptal.TabIndex = 0;
             this.btn_iptal.Text = "İptal Edildi";
             this.btn_iptal.UseVisualStyleBackColor = true;
+            this.btn_iptal.Click += new System.EventHandler(this.btn_iptal_Click);
             // 
             // Kayitliste
             // 
@@ -122,6 +126,7 @@ namespace ToDoListUygulaması
             this.Name = "Kayitliste";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kayitliste";
+            this.Load += new System.EventHandler(this.Kayitliste_Load);
             this.groupBoxİslemListe.ResumeLayout(false);
             this.groupBoxListe.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

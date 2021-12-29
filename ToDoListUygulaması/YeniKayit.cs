@@ -65,10 +65,19 @@ namespace ToDoListUygulaması
                 }
                 else
                 {
+
                     Form Kayitliste = Application.OpenForms["Kayitliste"];
-                    Kayitliste = new Kayitliste();
-                    Kayitliste.MdiParent= Application.OpenForms["Form1"];
-                    Kayitliste.Show();
+                    if (Kayitliste==null)
+                    {
+                        Kayitliste = new Kayitliste();
+                        Kayitliste.MdiParent = Application.OpenForms["Form1"];
+                        Kayitliste.Show();
+                        this.Close();
+                    }
+                    else
+                    {
+                        //////
+                    }
 
 
                 }
