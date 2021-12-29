@@ -45,7 +45,7 @@ namespace ToDoListUygulaması
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(59, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@ namespace ToDoListUygulaması
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 48);
+            this.label2.Location = new System.Drawing.Point(21, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 0;
@@ -62,32 +62,37 @@ namespace ToDoListUygulaması
             // 
             // txt_baslik
             // 
-            this.txt_baslik.Location = new System.Drawing.Point(147, 10);
+            this.txt_baslik.Location = new System.Drawing.Point(112, 7);
             this.txt_baslik.Name = "txt_baslik";
             this.txt_baslik.Size = new System.Drawing.Size(185, 20);
             this.txt_baslik.TabIndex = 1;
+            this.txt_baslik.Enter += new System.EventHandler(this.txt_baslik_Enter);
+            this.txt_baslik.Leave += new System.EventHandler(this.txt_baslik_Leave);
             // 
             // txt_kisa_aciklama
             // 
-            this.txt_kisa_aciklama.Location = new System.Drawing.Point(147, 48);
+            this.txt_kisa_aciklama.Location = new System.Drawing.Point(112, 38);
             this.txt_kisa_aciklama.Multiline = true;
             this.txt_kisa_aciklama.Name = "txt_kisa_aciklama";
             this.txt_kisa_aciklama.Size = new System.Drawing.Size(185, 78);
             this.txt_kisa_aciklama.TabIndex = 1;
+            this.txt_kisa_aciklama.Enter += new System.EventHandler(this.txt_baslik_Enter);
+            this.txt_kisa_aciklama.Leave += new System.EventHandler(this.txt_baslik_Leave);
             // 
             // btn_kaydet
             // 
-            this.btn_kaydet.Location = new System.Drawing.Point(172, 422);
+            this.btn_kaydet.Location = new System.Drawing.Point(204, 280);
             this.btn_kaydet.Name = "btn_kaydet";
-            this.btn_kaydet.Size = new System.Drawing.Size(75, 23);
+            this.btn_kaydet.Size = new System.Drawing.Size(93, 33);
             this.btn_kaydet.TabIndex = 2;
             this.btn_kaydet.Text = "Kaydet";
             this.btn_kaydet.UseVisualStyleBackColor = true;
+            this.btn_kaydet.Click += new System.EventHandler(this.btn_kaydet_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 151);
+            this.label3.Location = new System.Drawing.Point(44, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 0;
@@ -95,16 +100,18 @@ namespace ToDoListUygulaması
             // 
             // txt_aciklama
             // 
-            this.txt_aciklama.Location = new System.Drawing.Point(147, 148);
+            this.txt_aciklama.Location = new System.Drawing.Point(112, 127);
             this.txt_aciklama.Multiline = true;
             this.txt_aciklama.Name = "txt_aciklama";
             this.txt_aciklama.Size = new System.Drawing.Size(185, 78);
             this.txt_aciklama.TabIndex = 1;
+            this.txt_aciklama.Enter += new System.EventHandler(this.txt_baslik_Enter);
+            this.txt_aciklama.Leave += new System.EventHandler(this.txt_baslik_Leave);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 290);
+            this.label4.Location = new System.Drawing.Point(14, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 13);
             this.label4.TabIndex = 0;
@@ -112,15 +119,17 @@ namespace ToDoListUygulaması
             // 
             // txt_onem_derecesi
             // 
-            this.txt_onem_derecesi.Location = new System.Drawing.Point(147, 287);
+            this.txt_onem_derecesi.Location = new System.Drawing.Point(112, 218);
             this.txt_onem_derecesi.Name = "txt_onem_derecesi";
             this.txt_onem_derecesi.Size = new System.Drawing.Size(185, 20);
             this.txt_onem_derecesi.TabIndex = 1;
+            this.txt_onem_derecesi.Enter += new System.EventHandler(this.txt_baslik_Enter);
+            this.txt_onem_derecesi.Leave += new System.EventHandler(this.txt_baslik_Leave);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 355);
+            this.label5.Location = new System.Drawing.Point(56, 256);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 0;
@@ -135,16 +144,16 @@ namespace ToDoListUygulaması
             "Tamamlanmadı",
             "İptal Edildi",
             "Ertelendi"});
-            this.cmb_durum.Location = new System.Drawing.Point(107, 346);
+            this.cmb_durum.Location = new System.Drawing.Point(112, 253);
             this.cmb_durum.Name = "cmb_durum";
-            this.cmb_durum.Size = new System.Drawing.Size(121, 21);
+            this.cmb_durum.Size = new System.Drawing.Size(185, 21);
             this.cmb_durum.TabIndex = 3;
             // 
             // YeniKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 487);
+            this.ClientSize = new System.Drawing.Size(306, 318);
             this.Controls.Add(this.cmb_durum);
             this.Controls.Add(this.btn_kaydet);
             this.Controls.Add(this.txt_aciklama);

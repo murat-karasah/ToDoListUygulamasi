@@ -52,5 +52,21 @@ namespace ToDoListUygulaması
         {
             Application.Exit();
         }
+        Form T;
+        private void btn_yeni_kayit_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["YeniKayit"]!=null)
+            {
+                T = Application.OpenForms["YeniKayit"];
+                T.Focus();
+            }
+            else
+            {
+                T = new YeniKayit();
+                T.MdiParent = this;
+                T.Show();
+            }
+           
+        }
     }
 }

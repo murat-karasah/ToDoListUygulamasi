@@ -95,6 +95,7 @@ namespace ToDoListUygulaması
             this.btn_yeni_kayit.TabIndex = 0;
             this.btn_yeni_kayit.Text = "Yeni Kayıt";
             this.btn_yeni_kayit.UseVisualStyleBackColor = true;
+            this.btn_yeni_kayit.Click += new System.EventHandler(this.btn_yeni_kayit_Click);
             // 
             // pictureBox1
             // 
