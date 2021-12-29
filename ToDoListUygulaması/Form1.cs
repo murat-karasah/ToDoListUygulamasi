@@ -74,7 +74,7 @@ namespace ToDoListUygulaması
         {
             
             Todoservices todoservices = new Todoservices();
-            if (todoservices.kayitliste().Count!=0)
+            if (todoservices.kayitKontrol()!=0)
             {
                 Kayitliste kayitliste = new Kayitliste();
                 kayitliste.MdiParent = this;
